@@ -10,3 +10,6 @@ data = {
 df = pd.DataFrame(data)
 
 print("Original DataFrame:\n", df)
+
+# Filter rows where Age is greater than 25
+print("\nPeople older than 25:\n", df[df['Age'] > 25])

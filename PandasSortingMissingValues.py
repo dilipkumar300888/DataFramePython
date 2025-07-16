@@ -14,4 +14,5 @@ print("Original DataFrame:\n", df)
 print("\nDataFrame sorted by Score:\n", df.sort_values(by='Score'))
 
 
-
+# Drop rows with missing values
+print("\nDrop rows with any missing values:\n", df.dropna())

@@ -16,3 +16,10 @@ print("\nDataFrame sorted by Score:\n", df.sort_values(by='Score'))
 
 # Drop rows with missing values
 print("\nDrop rows with any missing values:\n", df.dropna())
+
+
+# Fill missing values
+df_filled = df.fillna({'Score': 0, 'Age': df['Age'].mean()})
+
+print("\nFilled missing values:\n", df_filled)
+

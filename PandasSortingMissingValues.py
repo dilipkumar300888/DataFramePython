@@ -23,3 +23,6 @@ df_filled = df.fillna({'Score': 0, 'Age': df['Age'].mean()})
 
 print("\nFilled missing values:\n", df_filled)
 
+
+# Check for nulls
+print("\nWhere Score is missing:\n", df[df['Score'].isnull()])

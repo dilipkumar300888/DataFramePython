@@ -26,3 +26,10 @@ print("\nFilled missing values:\n", df_filled)
 
 # Check for nulls
 print("\nWhere Score is missing:\n", df[df['Score'].isnull()])
+
+
+
+df['Result'] = np.where(df['Score'] >= 80, 'Pass', 'Fail')
+
+
+print("\nDataFrame with Result column:\n", df)

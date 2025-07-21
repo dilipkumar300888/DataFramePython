@@ -33,3 +33,7 @@ df['Result'] = np.where(df['Score'] >= 80, 'Pass', 'Fail')
 
 
 print("\nDataFrame with Result column:\n", df)
+
+median_age = df['Age'].median()
+
+print("\nMedian Age:", median_age)

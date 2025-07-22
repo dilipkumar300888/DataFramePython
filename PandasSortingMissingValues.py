@@ -37,3 +37,6 @@ print("\nDataFrame with Result column:\n", df)
 median_age = df['Age'].median()
 
 print("\nMedian Age:", median_age)
+
+df_cleaned = df.dropna(subset=['Score', 'Age'], how='all')
+print("\nAfter Dropping Rows with both Score and Age missing:\n", df_cleaned)

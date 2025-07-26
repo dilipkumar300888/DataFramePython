@@ -11,3 +11,5 @@ df = pd.DataFrame(data)
 print("Original DataFrame:\n", df)
 
 print("\nTotal Salary per Department:\n", df.groupby('Department')['Salary'].sum())
+
+print("\nAverage Experience:\n",df.groupby('Department')['Experience'].mean())

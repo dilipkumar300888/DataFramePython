@@ -13,3 +13,7 @@ print("Original DataFrame:\n", df)
 print("\nTotal Salary per Department:\n", df.groupby('Department')['Salary'].sum())
 
 print("\nAverage Experience:\n",df.groupby('Department')['Experience'].mean())
+
+df['Bonus'] = df['Salary'] * 0.10
+
+print("\nDataframe with Bonus:\n", df)

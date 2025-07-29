@@ -17,3 +17,5 @@ print("\nAverage Experience:\n",df.groupby('Department')['Experience'].mean())
 df['Bonus'] = df['Salary'] * 0.10
 
 print("\nDataframe with Bonus:\n", df)
+
+print("\nAverage Bonus by Department:\n",df.groupby('Department')['Bonus'].mean())

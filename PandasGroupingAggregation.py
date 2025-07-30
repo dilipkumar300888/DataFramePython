@@ -19,3 +19,5 @@ df['Bonus'] = df['Salary'] * 0.10
 print("\nDataframe with Bonus:\n", df)
 
 print("\nAverage Bonus by Department:\n",df.groupby('Department')['Bonus'].mean())
+
+print("\nGive rows greater than 3 years Experience:\n",df[df['Experience'] > 3])

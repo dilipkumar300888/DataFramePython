@@ -20,4 +20,10 @@ print("\nDataframe with Bonus:\n", df)
 
 print("\nAverage Bonus by Department:\n",df.groupby('Department')['Bonus'].mean())
 
-print("\nGive rows greater than 3 years Experience:\n",df[df['Experience'] > 3])
+exp_filtered = df[df['Experience'] > 3]
+
+print("\nGive rows greater than 3 years Experience:\n",exp_filtered)
+
+exp_count = exp_filtered.groupby('Department')['Employee'].count()
+
+print("\nEmployees with Experience > 3 (per Department):\n",exp_count)

@@ -7,3 +7,6 @@ print(dates)
 data = np.random.randint(100, size=5)
 df = pd.DataFrame({'Date': dates, 'Value': data})
 print(df)
+
+df.set_index('Date', inplace=True)
+print(df)

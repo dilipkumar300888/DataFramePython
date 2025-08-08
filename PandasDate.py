@@ -10,3 +10,4 @@ print(df)
 
 df.set_index('Date', inplace=True)
 print(df)
+print(df.loc['2023-01-03'])

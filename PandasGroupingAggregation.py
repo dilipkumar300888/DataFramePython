@@ -27,3 +27,19 @@ print("\nGive rows greater than 3 years Experience:\n",exp_filtered)
 exp_count = exp_filtered.groupby('Department')['Employee'].count()
 
 print("\nEmployees with Experience > 3 (per Department):\n",exp_count)
+
+
+data1 = {'Department': ['HR', 'HR', 'IT', 'IT', 'Finance', 'Finance'],
+        'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank'],
+        'Salary': [50000, 60000, 70000, 65000, 55000, 62000],
+        'Bonus': [5000, 6000, 7000, 6500, 5500, 6200]}
+
+df1 = pd.DataFrame(data1)
+
+
+# Multiple aggregations
+result = df1.groupby('Department').agg({
+    'Salary': ['mean', 'max'],
+    'Bonus': ['sum', 'min']
+})
+print("\nMultiple Aggregations:\n", result)

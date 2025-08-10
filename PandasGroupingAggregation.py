@@ -43,3 +43,14 @@ result = df1.groupby('Department').agg({
     'Bonus': ['sum', 'min']
 })
 print("\nMultiple Aggregations:\n", result)
+
+
+# Custom aggregation function
+def range_func(x):
+    return x.max() - x.min()
+
+result_custom = df1.groupby('Department').agg({
+    'Salary': range_func,
+    'Bonus': range_func
+})
+print("\nCustom Aggregation Function:\n", result_custom)

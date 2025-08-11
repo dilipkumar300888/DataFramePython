@@ -54,3 +54,5 @@ result_custom = df1.groupby('Department').agg({
     'Bonus': range_func
 })
 print("\nCustom Aggregation Function:\n", result_custom)
+
+print("\n")

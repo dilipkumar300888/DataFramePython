@@ -58,3 +58,5 @@ print("\nCustom Aggregation Function:\n", result_custom)
 print("\n Printing DataFrame with custom index:\n", df1.set_index('Department'))
 
 print("\nDataFrame with custom index and multiple columns:\n", df1.set_index(['Department', 'Name']))
+
+print("\n")

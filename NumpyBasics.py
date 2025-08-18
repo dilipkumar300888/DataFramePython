@@ -12,3 +12,4 @@ arr1 = np.array([3,7,1,9,4,6,8])
 
 print("Mean: ", np.mean(arr1))
 print("Median:", np.median(arr1))
+print("Standard Deviation:", np.std(arr1))

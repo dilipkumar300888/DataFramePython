@@ -18,3 +18,4 @@ print("Minimum:", np.min(arr1))
 print("Maximum:", np.max(arr1))
 print(arr)
 print("\n")
+

@@ -67,3 +67,4 @@ def chatbot():
 if __name__ == "__main__":
     print("Starting chatbot...")
     chatbot()
+    print("\nChatbot session ended.")

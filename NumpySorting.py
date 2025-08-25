@@ -7,3 +7,7 @@ new_arr = np.where(arr < 40, 0, arr)
 
 print("Original array:", arr)
 print("Modified array:", new_arr)
+
+
+
+

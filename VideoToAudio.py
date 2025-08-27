@@ -1,7 +1,7 @@
 import whisper
 from moviepy.editor import VideoFileClip
 
-video_path = "D:\PythonProjects\Dataframe\WhatsApp Video 2025-08-26 at 02.33.00_926b6f45.mp4"
+video_path = "D:\\PythonProjects\\Dataframe\\WhatsApp Video 2025-08-26 at 02.33.00_926b6f45.mp4"
 
 video_clip = VideoFileClip(video_path)
 audio_path = "temp_audio.wav"
@@ -19,3 +19,4 @@ with open("webex_transcript.txt", "w", encoding="utf-8") as f:
     f.write(result["text"])
 
 print("✅ Transcription completed! Saved to webex_transcript.txt")
+print("\n")

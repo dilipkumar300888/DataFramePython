@@ -20,3 +20,4 @@ with open("webex_transcript.txt", "w", encoding="utf-8") as f:
 
 print("✅ Transcription completed! Saved to webex_transcript.txt")
 print("\n Adding a new Line")
+print("\n",model)

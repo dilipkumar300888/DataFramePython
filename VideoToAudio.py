@@ -1,6 +1,8 @@
 import whisper
+import time
 from moviepy.editor import VideoFileClip
 
+start_time = time.time()
 video_path = "D:\\PythonProjects\\Dataframe\\WhatsApp Video 2025-08-26 at 02.33.00_926b6f45.mp4"
 
 video_clip = VideoFileClip(video_path)
@@ -22,3 +24,6 @@ print("✅ Transcription completed! Saved to webex_transcript.txt")
 print("\n Adding a new Line")
 print("\n",model)
 print("\n ")
+
+elapsed_time = time.time() - start_time
+print(f"\n⏱ Total time taken: {elapsed_time:.2f} seconds")

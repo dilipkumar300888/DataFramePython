@@ -15,6 +15,6 @@ print("Mean:", arr.mean())
 print("Max:", arr.max())
 print("Min:", arr.min())
 print("Standard Deviation:", arr.std())
-
 print("Square root: ", np.sqrt(arr))
+print("\n")
 

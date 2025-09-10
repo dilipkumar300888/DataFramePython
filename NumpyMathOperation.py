@@ -17,5 +17,5 @@ print("Min:", arr.min())
 print("Standard Deviation:", arr.std())
 print("Square root: ", np.sqrt(arr))
 print("\n Smaple outpu : "arr)
-print("\n")
+print("Multiply by 4: \n", arr * 4)
 

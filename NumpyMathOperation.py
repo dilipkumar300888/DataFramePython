@@ -19,4 +19,5 @@ print("Square root: ", np.sqrt(arr))
 print("\n Smaple outpu : "arr)
 print("Multiply by 4: \n", arr * 4)
 print("Multiply by 6: \n",arr * 6)
+print("Square each element: \n", arr ** 2)
 

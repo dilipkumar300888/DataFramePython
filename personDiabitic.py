@@ -40,5 +40,5 @@ print(f"Mean Squared Error: {round(mse, 2)}")
 print(f"R^2 Score: {round(r2, 2)}")
 print(f"Model Coefficients: {model.coef_}")
 print(f"Model Intercept: {model.intercept_}")
-
+print("\n")
 

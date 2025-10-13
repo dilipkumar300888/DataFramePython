@@ -23,3 +23,5 @@ print(f"Sklearn Model Coef: {sk_model.model.coef_[0]:.3f}, Intercept: {sk_model.
 
 # Visualize comparison
 plot_results(X, y, y_pred_scratch, y_pred_sklearn)
+
+print("\n")

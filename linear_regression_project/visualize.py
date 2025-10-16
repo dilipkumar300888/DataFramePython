@@ -8,6 +8,6 @@ def plot_results(X, y, y_pred_scratch, y_pred_sklearn):
     plt.ylabel('Y')
     plt.title('Linear Regression: Scratch vs Sklearn')
     plt.legend()
-    print("\n ")
+    print("\n This a plot function")
     plt.show()
     

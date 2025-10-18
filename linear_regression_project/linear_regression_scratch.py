@@ -9,6 +9,7 @@ class LinearRegressionScratch:
 
     def fit(self, X, y):
         n = float(len(X))
+        print("\n")
         for _ in range(self.epochs):
             y_pred = self.m * X + self.c
             D_m = (-2/n) * sum(X * (y - y_pred))

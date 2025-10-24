@@ -7,6 +7,7 @@ class LinearRegressionSklearn:
         self.model = LinearRegression()
 
     def fit(self, X, y):
+        print("Linear Regression using sklearn\n fit function\n")
         X = X.reshape(-1, 1)  # Reshape for sklearn
         self.model.fit(X, y)
 

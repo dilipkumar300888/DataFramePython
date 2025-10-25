@@ -12,5 +12,6 @@ class LinearRegressionSklearn:
         self.model.fit(X, y)
 
     def predict(self, X):
+        print("Linear Regression using sklearn\n predict function\n")
         X = X.reshape(-1, 1)  # Reshape for sklearn
         return self.model.predict(X)

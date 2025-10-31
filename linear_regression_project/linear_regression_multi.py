@@ -8,7 +8,7 @@ class LinearRegressionMulti:
         self.bias = None
 
     def fit(self, X, y):
-        print("Fitting the model...\n")
+        print("\nFitting the model...\n")
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
         self.bias = 0

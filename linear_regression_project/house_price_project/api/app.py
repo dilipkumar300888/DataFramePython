@@ -42,7 +42,7 @@ def root():
 
 @app.post("/predict")
 def predict_price(features: HouseFeatures):
-    print(features)
+    print(features + "\n")
     data = np.array([[features.area, features.bedrooms, features.age, features.distance]])
     data_scaled = scaler.transform(pd.DataFrame(data, columns=dummy_data.columns))
     prediction = model.predict(data_scaled)

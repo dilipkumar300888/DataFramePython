@@ -4,6 +4,7 @@ import numpy as np
 
 
 def evaluate_model(y_true, y_pred):
+    print("\n Evaluating model performance...")
     mae = mean_absolute_error(y_true, y_pred)
     mse = mean_squared_error(y_true, y_pred)
     rmse = np.sqrt(mse)

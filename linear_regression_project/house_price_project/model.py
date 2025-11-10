@@ -7,6 +7,7 @@ class HousePriceModel:
         self.model = LinearRegression()
 
     def train(self, x_train, y_train):
+        print("\n Training the Linear Regression model...")
         self.model.fit(x_train, y_train)
 
     def predict(self, x_test):

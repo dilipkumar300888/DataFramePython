@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 def load_and_preprocess_data(file_path):
+    print("\n Loading and preprocessing data...")
     # Load the dataset
     df = pd.read_csv(file_path)
 

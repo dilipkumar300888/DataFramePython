@@ -7,6 +7,7 @@ def generate_data():
     return X, y
 
 def train_test_split(X, y, test_size=0.25):
+    print("train test split")
     # Shuffle the data
     indices = np.arange(X.shape[0])
     np.random.shuffle(indices)

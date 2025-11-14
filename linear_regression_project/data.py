@@ -1,6 +1,7 @@
 import numpy as np
 
 def generate_data():
+    print("generate_data")
     # Sample data
     X = np.array([1, 2, 3, 4, 5, 6, 7, 8])
     y = np.array([3, 4, 2, 5, 6, 7, 8, 9])

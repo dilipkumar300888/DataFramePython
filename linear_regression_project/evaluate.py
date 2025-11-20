@@ -7,6 +7,7 @@ def mean_absolute_error(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred))
 
 def mean_squared_error(y_true, y_pred):
+    print("mean_squared_error")
     return np.mean((y_true - y_pred) ** 2)
 
 def root_mean_squared_error(y_true, y_pred):

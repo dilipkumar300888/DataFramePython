@@ -24,5 +24,6 @@ class LinearRegressionMulti:
             self.bias -= self.learning_rate * db
 
     def predict(self, X):
+        print("\nMaking predictions...\n")
         y_predicted = np.dot(X, self.weights) + self.bias
         return y_predicted

@@ -2,6 +2,7 @@ import numpy as np
 
 class LinearRegressionScratch:
     def __init__(self, learning_rate=0.01, epochs=1000):
+        print("\nInitializing LinearRegressionScratch model...\n")
         self.learning_rate = learning_rate
         self.epochs = epochs
         self.m = 0

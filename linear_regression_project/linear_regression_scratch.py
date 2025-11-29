@@ -19,4 +19,5 @@ class LinearRegressionScratch:
             self.c -= self.learning_rate * D_c
 
     def predict(self, X):
+        print("\n this is Linear Regression from scratch\n predict function\n")
         return self.m * X + self.c

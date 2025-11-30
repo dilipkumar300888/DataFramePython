@@ -4,6 +4,7 @@ import numpy as np
 
 class LinearRegressionSklearn:
     def __init__(self):
+        print("Initializing LinearRegressionSklearn model...\n")
         self.model = LinearRegression()
 
     def fit(self, X, y):

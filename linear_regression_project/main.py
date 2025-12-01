@@ -8,6 +8,7 @@ from visualize import plot_results
 X, y = generate_data()
 
 # Train scratch model
+print("Training Linear Regression from Scratch...\n")
 scratch_model = LinearRegressionScratch(learning_rate=0.01, epochs=1000)
 scratch_model.fit(X, y)
 y_pred_scratch = scratch_model.predict(X)

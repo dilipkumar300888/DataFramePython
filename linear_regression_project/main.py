@@ -14,6 +14,7 @@ scratch_model.fit(X, y)
 y_pred_scratch = scratch_model.predict(X)
 
 # Train sklearn model
+print("Training Linear Regression using Sklearn...\n")
 sk_model = LinearRegressionSklearn()
 sk_model.fit(X, y)
 y_pred_sklearn = sk_model.predict(X)

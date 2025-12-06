@@ -5,6 +5,7 @@ from visualize import plot_results
 
 
 # Load data
+print("Generating synthetic data...\n")
 X, y = generate_data()
 
 # Train scratch model

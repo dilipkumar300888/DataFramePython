@@ -7,6 +7,7 @@ y = np.array([3, 4, 2, 5, 6])
 
 
 # Visualize the data
+print("\n Visualizing the data...")
 plt.scatter(X, y, color='blue', label='Actual data')
 plt.xlabel('Hours Studied')
 plt.ylabel('Score')

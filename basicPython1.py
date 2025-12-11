@@ -5,6 +5,7 @@ X = np.array([1, 2, 3, 4, 5])
 y = np.array([3, 4, 2, 5, 6])
 
 # Initialize parameters
+print("\n Training a simple linear regression model using Gradient Descent...")
 m = 0  # slope
 c = 0  # intercept
 L = 0.01  # learning rate

@@ -14,6 +14,7 @@ n = float(len(X))  # number of data points
 
 # Gradient Descent Algorithm
 for i in range(epochs):
+    print(f"Iteration {i+1}: m = {m:.4f}, c = {c:.4f}")
     y_pred = m * X + c  # predicted y
     D_m = (-2/n) * sum(X * (y - y_pred))  # derivative w.r.t m
     D_c = (-2/n) * sum(y - y_pred)  # derivative w.r.t c

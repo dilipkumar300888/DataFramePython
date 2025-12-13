@@ -1,6 +1,7 @@
 import numpy as np
 
 # Sample data
+print("Sample data for linear regression:")
 X = np.array([1, 2, 3, 4, 5])
 y = np.array([3, 4, 2, 5, 6])
 

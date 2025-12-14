@@ -35,6 +35,7 @@ def get_weather(city):
 # ------------------ Agent ------------------
 def agentic_response(user_input):
     """Decide which tool to use based on input."""
+    print("Processing user input...")
     text = user_input.lower()
 
     if "cat" in text or "fact" in text:

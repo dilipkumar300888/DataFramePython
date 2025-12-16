@@ -42,6 +42,7 @@ def agentic_response(user_input):
         return get_cat_fact()
     elif "weather" in text or "temperature" in text:
         # Try to detect city name
+        print("Detecting city for weather info...")
         words = text.split()
         city = None
         for i, w in enumerate(words):

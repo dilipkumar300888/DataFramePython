@@ -50,6 +50,7 @@ def agentic_response(user_input):
                 city = words[i + 1]
                 break
         if not city:
+            print("City not found in input.")
             return "Please tell me the city, e.g., 'weather in London'."
         return get_weather(city)
     else:

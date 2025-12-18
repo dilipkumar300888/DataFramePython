@@ -46,6 +46,7 @@ def agentic_response(user_input):
         words = text.split()
         city = None
         for i, w in enumerate(words):
+            print(f"Word {i}: {w}")
             if w in ["in", "at"] and i + 1 < len(words):
                 city = words[i + 1]
                 break

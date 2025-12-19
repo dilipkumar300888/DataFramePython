@@ -14,6 +14,7 @@ def get_cat_fact():
 def get_weather(city):
     """Fetch current weather using Open-Meteo API (no API key needed)."""
     # First, get city coordinates
+    print("Fetching coordinates for city...")
     geo_url = f"https://geocoding-api.open-meteo.com/v1/search?name={city}&count=1"
     try:
         geo_res = requests.get(geo_url, timeout=5).json()

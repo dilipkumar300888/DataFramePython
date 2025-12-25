@@ -7,6 +7,7 @@ data = {
     "City": ["New York", "Los Angeles", "Chicago"]
 }
 
+print("\n")
 df = pd.DataFrame(data)
 print("Full DataFrame:")
 print(df)

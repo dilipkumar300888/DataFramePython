@@ -7,7 +7,7 @@ data = {
     "City": ["New York", "Los Angeles", "Chicago"]
 }
 
-print("\n")
+print("\n new line")
 df = pd.DataFrame(data)
 print("Full DataFrame:")
 print(df)

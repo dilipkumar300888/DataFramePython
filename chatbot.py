@@ -24,6 +24,7 @@ def get_weather(city):
         lon = geo_res["results"][0]["longitude"]
 
         # Get current weather
+        print("/n")
         weather_url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true"
         weather_res = requests.get(weather_url, timeout=5).json()
         temp = weather_res["current_weather"]["temperature"]

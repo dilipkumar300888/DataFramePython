@@ -32,6 +32,7 @@ def get_weather(city):
 
         return f"The temperature in {city} is {temp}°C with wind speed {wind} km/h."
     except Exception as e:
+        print("Error fetching weather data.")
         return f"Error fetching weather: {e}"
 
 # ------------------ Agent ------------------

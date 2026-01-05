@@ -58,6 +58,7 @@ def agentic_response(user_input):
             return "Please tell me the city, e.g., 'weather in London'."
         return get_weather(city)
     else:
+        print("No matching tool found.")
         return "I can give cat facts or weather info. Try 'cat fact' or 'weather in Paris'."
 
 def chatbot():

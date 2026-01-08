@@ -30,7 +30,7 @@ def get_weather(city):
         print("\n")
         temp = weather_res["current_weather"]["temperature"]
         wind = weather_res["current_weather"]["windspeed"]
-
+        print("\n")
         return f"The temperature in {city} is {temp}°C with wind speed {wind} km/h."
     except Exception as e:
         print("Error fetching weather data.")

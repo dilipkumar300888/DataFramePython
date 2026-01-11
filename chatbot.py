@@ -29,6 +29,7 @@ def get_weather(city):
         weather_res = requests.get(weather_url, timeout=5).json()
         print("\n")
         temp = weather_res["current_weather"]["temperature"]
+        print("\n")
         wind = weather_res["current_weather"]["windspeed"]
         print("\n")
         return f"The temperature in {city} is {temp}°C with wind speed {wind} km/h."

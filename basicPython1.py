@@ -19,6 +19,7 @@ for i in range(epochs):
     y_pred = m * X + c  # predicted y
     D_m = (-2/n) * sum(X * (y - y_pred))  # derivative w.r.t m
     D_c = (-2/n) * sum(y - y_pred)  # derivative w.r.t c
+    print("\n")
     m = m - L * D_m  # update m
     c = c - L * D_c  # update c
 

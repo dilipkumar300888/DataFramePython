@@ -7,6 +7,6 @@ data = {
     "age": 6,
     "distance": 6
 }
-
+print("Sending request to API...")
 response = requests.post(url, json=data)
 print(response.json())
